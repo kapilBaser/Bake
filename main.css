@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1.2rem;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.vdo{
+    width: 100%;
+    height: 85%;
+    position: relative;
+}
+.bg{
+    width: 100%;
+    
+    object-fit: cover;
+    height: 100%;
+}
+.overlay{
+    
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    background-color: #5F6984;
+    mix-blend-mode: multiply;
+    
+}
+img{
+    width: 180px;
+    padding: 1em ;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    
+    transform: translatey(-50%);
+    color: white;
+    z-index: 20;
+    text-transform: uppercase;
+    
+    width: 100%;
+    text-align: center;
+    padding: 0 1em;
+}
+button{
+    padding: .6em 1.1em;
+    margin-top: 2em;
+    background-color: #fb5777;
+    outline: none;
+    border: none;
+    font-size: .8rem;
+    color: white;
+    
+    font-weight: bold;
+}
+.sec{
+    width: 100%;
+    padding: 2em 1em;
+    background-color: #fadfe4;
+}
+.ser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: white;
+    border-radius: 12px;
+    
+}
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    border-radius: 12px;
+}
+p{
+    font-size: 12px;
+}
+.slider{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: .7em 0;
+    background-color: whitesmoke;
+}
+.container{
+    width: 400%;
+    display: flex;
+    animation:20s slider infinite;
+    position: relative;
+}
+.container img{
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0%;
+}
+.prev{
+    position: absolute;
+    background-color: #fadfe4;
+    z-index: 20;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.next{
+    position: absolute;
+    background-color: #fadfe4;
+    z-index: 20;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+@keyframes slider{
+    0%{
+        left:0%;
+    }
+    25%{
+        left:0%;
+    }
+    30%{
+        left:-100%;
+    }
+    55%{
+        left:-100%;
+    }
+    60%{
+        left:-200%
+    }
+    90%{
+        left:-200%
+    }
+    95%{
+        left:-300%
+    }
+    100%{
+        left:-300%
+    }
+    
+}
